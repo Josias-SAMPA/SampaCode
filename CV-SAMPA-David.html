@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - SAMPA David Josias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid #fbbf24;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #fbbf24;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #fbbf24;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #1f2937;
+            border-bottom: 2px solid #fbbf24;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .section-content {
+            margin-left: 0;
+        }
+
+        .job, .education, .skill-group {
+            margin-bottom: 25px;
+        }
+
+        .job-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title, .degree {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .company, .school {
+            font-size: 1rem;
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: #999;
+            font-style: italic;
+        }
+
+        .description {
+            color: #555;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-group h3 {
+            color: #fbbf24;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #fef3c7;
+            color: #1f2937;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #fbbf24;
+        }
+
+        .projects-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .project {
+            border-left: 4px solid #fbbf24;
+            padding-left: 15px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .project-desc {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>SAMPA David Josias</h1>
+            <p class="title">Développeur Web Full Stack</p>
+            <div class="contact-info">
+                <span>📧 david.sampa@email.com</span>
+                <span>📱 +243 XXXXXXXXX</span>
+                <span>📍 Kinshasa, RDC</span>
+                <span><a href="https://github.com">GitHub</a></span>
+                <span><a href="https://linkedin.com">LinkedIn</a></span>
+            </div>
+        </header>
+
+        <!-- Profil Professionnel -->
+        <section>
+            <h2>Profil Professionnel</h2>
+            <div class="section-content">
+                <p class="description">
+                    Étudiant en Licence Informatique passionné par la conception et le développement d'applications web innovantes. 
+                    Créateur de solutions numériques qui résolvent les problèmes réels du quotidien. 
+                    Enthousiaste à l'idée de collaborer sur des projets performants, sécurisés et modernes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section>
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Bases de Données</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Outils & Autres</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section>
+            <h2>Projets Récents</h2>
+            <div class="projects-list">
+                <div class="project">
+                    <div class="project-title">Portfolio Personnel</div>
+                    <div class="project-desc">
+                        Site web showcase présentant mes projets et compétences. 
+                        Développé avec HTML5, CSS3, JavaScript et design responsive. 
+                        Intégration de menu hamburger mobile et animations fluides.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Application de Gestion</div>
+                    <div class="project-desc">
+                        Plateforme web full-stack avec Laravel et Vue.js. 
+                        Gestion de données, authentification utilisateur et interface intuitive.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">E-Commerce Platform</div>
+                    <div class="project-desc">
+                        Boutique en ligne fonctionnelle avec panier, paiement et tableau de bord administrateur. 
+                        Tech: React, Node.js, MongoDB.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formation -->
+        <section>
+            <h2>Formation</h2>
+            <div class="section-content">
+                <div class="education">
+                    <div class="education-header">
+                        <div>
+                            <div class="degree">Licence Informatique</div>
+                            <div class="school">Université [Nom de l'université]</div>
+                        </div>
+                        <span class="date">En cours</span>
+                    </div>
+                    <p class="description">Spécialisation en développement web et génie logiciel</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Langues -->
+        <section>
+            <h2>Langues</h2>
+            <div class="section-content">
+                <p class="description">
+                    <strong>Français:</strong> Natif | 
+                    <strong>Anglais:</strong> Intermédiaire | 
+                    <strong>Lingala:</strong> Natif
+                </p>
+            </div>
+        </section>
+
+        <!-- À propos supplémentaire -->
+        <section>
+            <h2>À Propos</h2>
+            <div class="section-content">
+                <p class="description">
+                    En tant que développeur web, je m'engage à créer des solutions numériques de qualité 
+                    qui répondent aux besoins réels de mes clients. Je suis toujours à l'apprentissage 
+                    des dernières technologies et best practices du développement web moderne. 
+                    Collaborateur enthousiaste, je suis prêt à travailler sur des projets innovants 
+                    et performants.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
