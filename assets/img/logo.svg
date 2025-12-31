@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#111827" stroke="#fbbf24" stroke-width="2"/>
+  
+  <!-- Stylized code brackets -->
+  <g fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left bracket < -->
+    <path d="M 30 35 L 25 50 L 30 65" />
+    
+    <!-- Right bracket > -->
+    <path d="M 70 35 L 75 50 L 70 65" />
+    
+    <!-- Middle slash (representing code/web) -->
+    <path d="M 45 30 L 55 70" />
+  </g>
+  
+  <!-- Accent dot (representing dots in domain) -->
+  <circle cx="50" cy="20" r="2" fill="#fbbf24"/>
+  <circle cx="50" cy="80" r="2" fill="#fbbf24"/>
+</svg>
